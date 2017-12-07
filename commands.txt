@@ -5,7 +5,7 @@ crear Manager
 * docker swarm init --advertise-addr <ip>
 
 crear 2 workers 
-* docker swarm join --token SWMTKN-1-2a74ueq9pn97im76cj4gwpsjhsk4lo29r07emo68z73yy86ep0-0c5qnqz07vvsrfg6uak1yav3c 192.168.0.18:2377
+* docker swarm join --token <token> 192.168.0.18:2377
 
 arrancar visualitzador del cluster
 * docker run -d -p 7777:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
